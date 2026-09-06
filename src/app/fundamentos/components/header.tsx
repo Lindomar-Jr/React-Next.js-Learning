@@ -9,12 +9,12 @@ function Nossahistoria () {
 } 
     
 //
-export default function Header () {
+export default function Header (props: any) {
   const nome = "Lindomar";
   return (
-    <div>
-      <h1>Header:</h1>
-      <p>Bem-vindo à nossa empresa {nome}! Estamos comprometidos em fornecer os melhores serviços aos nossos clientes.</p>
+    <div className="bg-green-400">
+      <p>{props.titulo}</p>
+      <p>{props.subtitulo}</p>
       <Nossahistoria />
       <hr/>
     </div>
